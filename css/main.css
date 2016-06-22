@@ -1,0 +1,6 @@
+section {
+	min-height: 500px;
+}
+section:nth-child(even) {
+	background-color: red;
+}

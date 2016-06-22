@@ -1,0 +1,22 @@
+<header>
+	<div class="container">
+		<div class="row">
+			<h1>{{intro.h1}}</h1>
+			<h2>{{intro.h2}}</h2>
+			<img src="{{intro.img1}}">
+			<p>{{intro.p1}}</p>
+			<p>{{intro.p2}}</p>
+		</div>
+		<div class="row">
+			<h2>{{contents.title}}</h2>
+			<ul>
+				<li ng-repeat="x in contents.sections">
+					<a href="{{x.href}}">{{x.title}}</a>
+				</li>
+			</ul>
+			<h2>{{contents.h2}}</h2>
+			<img src="{{contents.img1}}">
+			<p>{{contents.p1}}</p>
+		</div>
+	</div>
+</header>

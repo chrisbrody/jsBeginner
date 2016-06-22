@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript for Humans</title>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="js4noobs">
+
+	<header>
+		<div class="container" ng-controller="introCtrl">
+			<div class="row">
+				<h1>{{intro.h1}}</h1>
+				<h2>{{intro.h2}}</h2>
+				<img src="{{intro.img1}}" class="img-responsive">
+				<p>{{intro.p1}}</p>
+				<p>{{intro.p2}}</p>
+			</div>
+			<div class="row">
+				<h2>{{contents.title}}</h2>
+				<ul>
+					<li ng-repeat="x in contents.sections">
+						<a href="{{x.href}}">{{x.title}}</a>
+					</li>
+				</ul>
+				<h2>{{contents.h2}}</h2>
+				<img src="{{contents.img1}}" class="img-responsive">
+				<p>{{contents.p1}}</p>
+			</div>
+		</div>
+	</header>
+
+	<section id="console" ng-controller="consoleCtrl">
+		<div class="container">
+			<h1>{{consoles.h1}}</h1>
+			<p>{{consoles.p1}}</p>
+			<p>{{consoles.p2}}</p>
+			<img src="{{consoles.img1}}" class="img-responsive">
+			<p>{{consoles.p3}}</p>
+			<p>{{consoles.p4}}</p>
+			<p>{{consoles.p5}}</p>
+		</div>
+	</section>
+
+	<section id="strings" ng-controller="stringCtrl">
+		<div class="container">
+			<h1>{{strings.h1}}</h1>
+			<p>{{strings.p1}}</p>
+			<p>{{strings.p2}}</p>
+			<img src="{{strings.img1}}">
+			<p>{{strings.p3}}</p>
+		</div>
+	</section>
+
+	<section id="variables" ng-controller="variableCtrl">
+		<div class="container">
+			<h1>{{variables.h1}}</h1>
+			<p>{{variables.p1}}</p>
+			<p>{{variables.p2}}</p>
+			<img src="{{variables.img1}}">
+			<p>{{variables.p3}}</p>
+			<p>{{variables.p4}}</p>
+		</div>
+	</section>
+
+	<section id="usingfunctions" ng-controller="usingFunctionsCtrl">
+		<div class="container">
+			<h1>{{usingFuncs.title}}</h1>
+		</div>
+	</section>
+
+	<section id="newFunctions" ng-controller="newFunctionsCtrl">
+		<div class="container">
+			<h1>{{newFuncs.title}}</h1>
+		</div>
+	</section>
+
+	<section id="loops" ng-controller="loopCtrl">
+		<div class="container">
+			<h1>{{loops.title}}</h1>
+		</div>
+	</section>
+
+	<section id="arrays" ng-controller="arrayCtrl">
+		<div class="container">
+			<h1>{{arrs.title}}</h1>
+		</div>
+	</section>
+
+	<section id="objects" ng-controller="objectCtrl">
+		<div class="container">
+			<h1>{{objs.title}}</h1>
+		</div>
+	</section>
+
+
+
+	<script src="js/angular.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controllers/introctrl.js"></script>
+	<script src="js/controllers/consolectrl.js"></script>
+	<script src="js/controllers/stringctrl.js"></script>
+	<script src="js/controllers/variablectrl.js"></script>
+	<script src="js/controllers/usingfunctionsctrl.js"></script>
+	<script src="js/controllers/newfunctionsctrl.js"></script>
+	<script src="js/controllers/loopsctrl.js"></script>
+	<script src="js/controllers/arraysctrl.js"></script>
+	<script src="js/controllers/objectsctrl.js"></script>
+</body>
+</html>
